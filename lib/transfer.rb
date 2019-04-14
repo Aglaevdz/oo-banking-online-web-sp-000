@@ -19,6 +19,7 @@ class Transfer
        @receiver.balance += @amount
        @status = "complete"
     else
+<<<<<<< HEAD
       @status = "rejected"
       "Transaction rejected. Please check your account balance."
      end
@@ -29,6 +30,10 @@ class Transfer
        @receiver.balance -= @amount
        @sender.balance += @amount
        @status = "reversed"
+=======
+      "Transaction rejected. Please check your account balance."
+     end
+>>>>>>> c25bd5e1dff2610222f3b2a4ead1d9f74b17b74a
   end
 end
 end
